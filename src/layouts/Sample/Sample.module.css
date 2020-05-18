@@ -1,0 +1,75 @@
+.Container {
+  width: 110rem;
+  /* background-color: rgb(239, 222, 255); */
+  margin: 6rem auto;
+  position: relative;
+  padding: 4rem;
+}
+
+.SampleHeading {
+  position: absolute;
+  transform: translate(-7rem, -7.5rem);
+}
+
+.SampleHeading h2 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.SampleContent h3 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.SampleLayout {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.AudioSection {
+  display: flex;
+  padding: 4rem;
+  background-color: rgb(255, 244, 236);
+  margin-top: 2rem;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.AudioPlayer {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2rem 4rem;
+}
+
+audio {
+  box-shadow: 0px 4px 0px #c79e57 !important;
+  border-radius: 4rem;
+}
+
+audio:focus {
+  outline: none;
+}
+
+.AudioPlayer p {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+.AudioPlayer h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.AudioPlayer h2 span {
+  font-weight: 900;
+}
+
+.AudioImage img {
+  transform: scale(1.2);
+  border: 6px solid rgb(255, 157, 88);
+}

@@ -1,0 +1,71 @@
+.Testimony {
+  padding: 6rem 10rem 0 0;
+  margin-top: 6rem;
+}
+
+.Container {
+  background-color: rgb(255, 238, 245);
+  width: 100%;
+  position: relative;
+}
+
+.TestimonyHeading {
+  position: absolute;
+  transform: translate(7rem, -5rem);
+}
+
+.TestimonyHeading h2 {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.TestimonyContent {
+  padding: 10rem 6rem;
+}
+
+.TestimonyContent h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.TestimonyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+}
+
+.TestimonyContainer p {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 2rem 4rem;
+}
+
+.TestimonyContainer h4 {
+  font-weight: 900;
+}
+
+.TestimonyBody {
+  display: flex;
+}
+
+
+.Quotes {
+  font-size: 13rem;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+
+.TestimonyImage {
+  width: 17rem;
+  height: 17rem;
+  /* background: white; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.TestimonyImage img {
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+}
