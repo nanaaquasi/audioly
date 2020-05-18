@@ -1,0 +1,70 @@
+.MainSection {
+  /* padding: 6rem; */
+}
+
+.IntroText {
+  width: 80%;
+  margin: 6rem auto;
+}
+
+.IntroText p {
+  font-style: italic;
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+
+.AudioDev {
+  display: flex;
+  justify-content: space-between;
+  margin: 20rem 0;
+}
+
+.Image {
+  width: 70rem;
+
+}
+
+.Image img {
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.Content {
+  width: 65%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0 8rem;
+}
+
+.ContentHeading {
+  font-size: 3.2rem;
+  font-weight: bolder;
+  width: 80%;
+  line-height: 1.1;
+}
+
+.ContentBody {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.Button {
+  background-color: #f7c945;
+  outline: none;
+  border: none;
+  padding: 2rem 4rem;
+  font-size: 2.4rem;
+  color: black;
+  font-family: inherit;
+  font-weight: 700;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background-color: #e2af22;
+}

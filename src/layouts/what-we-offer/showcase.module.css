@@ -1,0 +1,91 @@
+.Showcase {
+  padding: 6rem 0 0 10rem;
+  margin-top: 6rem;
+}
+
+.Container {
+  background-color: rgb(233, 255, 255);
+  width: 100%;
+  position: relative;
+}
+
+.ShowcaseHeading {
+  position: absolute;
+  transform: translate(-3rem, -5rem);
+}
+
+.ShowcaseHeading h2 {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.ShowcaseContent {
+  padding: 10rem 6rem;
+}
+
+.ShowcaseContent h3 {
+  font-size: 3rem;
+
+}
+
+.ServiceContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.Service {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  background-color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+}
+
+.ServiceImage {
+  flex: 4;
+  width: 100%;
+  height: 30%;
+}
+
+.ServiceImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ServiceHeading {
+  flex: 1;
+}
+
+.ServiceBody {
+  flex: 3;
+}
+
+.ServiceBody p {
+  line-height: 1.5;
+  padding: 0 2rem;
+}
+
+.Service button {
+  flex: 1;
+  margin-top: 1rem;
+  background: transparent;
+  outline: none;
+  border: 2px solid #f7c945;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+  color: brown;
+  cursor: pointer;
+}
+
+.ServiceHeading h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(136, 136, 136);
+  margin: 2rem 0;
+  padding: 0 2rem;
+}

@@ -1,0 +1,12 @@
+.Container {
+  width: 100%;
+  padding: 6rem;
+  margin-top: 6rem;
+}
+
+.SubscriptionHeading {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2rem;
+}

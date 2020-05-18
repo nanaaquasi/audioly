@@ -1,0 +1,48 @@
+.Container {
+  width: 100%;
+  margin: 15rem 0;
+}
+
+.Container h1 {
+  text-align: center;
+  font-size: 6rem;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5rem;
+}
+
+.Container h1::after {
+  content: '';
+  position: absolute;
+  width: 8rem;
+  height: 1rem;
+  background-color: rgb(255, 232, 99);
+  transform: translate(-23rem, 7.5rem);
+}
+
+
+
+.ClientSection {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(247, 255, 255);
+  padding: 6rem;
+}
+
+.ClientLogo {
+  width: 8rem;
+  background-blend-mode: luminosity;
+}
+
+.ClientLogo img {
+  width: 100%;
+  object-fit: cover;
+
+  transition: all .2s;
+}
+
+.ClientLogo img:hover {
+  opacity: 1;
+}

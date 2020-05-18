@@ -1,0 +1,88 @@
+.Footer {
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  height: 40rem;
+  padding: 8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.FooterNav {
+  flex: 1;
+}
+
+.Logo h1 {
+  font-size: 3.6rem;
+  color: white;
+  font-weight: 900;
+}
+
+.FooterNav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav h3 {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 6rem;
+  font-weight: 200;
+}
+
+.NavItem {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.Contact {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem;
+}
+
+.Contact h3 {
+  color: white;
+}
+
+.Contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.Input {
+  width: 70%;
+  padding: 1rem 2rem;
+  outline: none;
+  background: transparent;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 1rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.Button {
+  background-color: #ececec;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: rgb(17, 17, 17);
+  font-family: inherit;
+  font-weight: 700;
+  margin-top: 2rem;
+  cursor: pointer;
+}

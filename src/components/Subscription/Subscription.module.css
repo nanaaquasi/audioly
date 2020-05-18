@@ -1,0 +1,53 @@
+.Container {
+  width: 100rem;
+  margin: 0 auto;
+  background-color: rgb(255, 252, 205);
+  /* height: 10rem; */
+  padding: 5rem;
+
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+
+.SubscriptionImage {
+  width: 16rem;
+}
+
+.SubscriptionImage img {
+  width: 100%;
+}
+
+.SubscriptionContent {
+  flex: 1;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.SubscriptionContent h3 {
+  font-size: 2rem;
+}
+
+.SubscriptionContent p {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.EmailInput {
+  width: 70%;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 20rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 2rem;
+
+  position: relative;
+  z-index: 10;
+}
