@@ -7,9 +7,13 @@ import adobeLogo from '../src/assets/adobe.svg';
 
 import audioImage_1 from '../src/assets/sample_1.png';
 import audioImage_2 from '../src/assets/sample_2.png';
+import audioImage_3 from '../src/assets/sample_3.png';
+import audioImage_4 from '../src/assets/sample_4.png';
 
 import audioSample_1 from '../src/assets/sample_1.mp3';
 import audioSample_2 from '../src/assets/sample_2.mp3';
+import audioSample_3 from '../src/assets/sample_3.mp3';
+import audioSample_4 from '../src/assets/sample_4.mp3';
 
 class Service {
   constructor({ id, imagePath, title, body, buttonText = 'Book Service' }) {
@@ -87,6 +91,22 @@ const audioSamples = [
     title: 'HSBC',
     description:
       'HSBC worked with audioly to create host reads, network reads and to produce their own creative to run across many podcast networks.',
+  },
+  {
+    id: 'audio3',
+    image: audioImage_3,
+    audioFile: audioSample_3,
+    title: 'HSBC',
+    description:
+      'Here’s an example of a host reading the same HSBC ad as above - same copy, but show specific, better reflecting the sound of the show, allowing for a more integrated feel.',
+  },
+  {
+    id: 'audio4',
+    image: audioImage_4,
+    audioFile: audioSample_4,
+    title: 'Porter Airlines',
+    description:
+      'Regional airline, Porter Air worked with TPX and the legendary Alan Cross to create a two-minute endoresed host read spot to run on his show',
   },
 ];
 

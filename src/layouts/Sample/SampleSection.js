@@ -13,17 +13,19 @@ const SampleSection = () => {
       <div className={styles.SampleContent}>
         <h3>Here are some of audio samples.</h3>
         <div className={styles.SampleLayout}>
-          {audioSamples.map((audio) => {
-            return (
-              <AudioPlayer
-                title={audio.title}
-                description={audio.description}
-                image={audio.image}
-                audio={audio.audioFile}
-                key={audio.id}
-              />
-            );
-          })}
+          {audioSamples
+            .map((audio) => {
+              return (
+                <AudioPlayer
+                  title={audio.title}
+                  description={audio.description}
+                  image={audio.image}
+                  audio={audio.audioFile}
+                  key={audio.id}
+                />
+              );
+            })
+            .slice(0, 2)}
         </div>
       </div>
     </div>
@@ -35,7 +37,7 @@ const audioPlayerStyles = {
   boxShadow: '0px 4px 0px #c79e57 !important',
 };
 
-const AudioPlayer = (props) => {
+export const AudioPlayer = (props) => {
   return (
     <div className={styles.AudioSection}>
       <div className={styles.AudioImage}>

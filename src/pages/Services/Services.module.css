@@ -2,17 +2,6 @@
   /* padding: 6rem; */
 }
 
-.IntroText {
-  width: 80%;
-  margin: 6rem auto;
-}
-
-.IntroText p {
-  font-style: italic;
-  font-size: 2.4rem;
-  line-height: 1.4;
-}
-
 .AudioDev {
   display: flex;
   justify-content: space-between;

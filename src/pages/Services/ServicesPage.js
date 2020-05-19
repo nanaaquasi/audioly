@@ -5,21 +5,20 @@ import Footer from '../../layouts/Footer/Footer';
 import NewsLetter from '../../layouts/NewsLetter/Newsletter';
 
 import styles from './Services.module.css';
+import IntroText from '../../components/IntroText/IntroText';
 
 const ServicesPage = () => {
   return (
     <div>
       <NavLarge title='Our Services.' />
       <div className={styles.MainSection}>
-        <div className={styles.IntroText}>
-          <p>
-            The finest presentations have a strong point of view. They distill
-            complex information and grab our attention with effective visuals.
-            Yet, after working with thousands of clients, we’ve learned that
-            above all, persuasive presenters deliver messages that matter to
-            their audiences. Let us help you resonate.
-          </p>
-        </div>
+        <IntroText
+          body='The finest presentations have a strong point of view. They distill
+          complex information and grab our attention with effective visuals.
+          Yet, after working with thousands of clients, we’ve learned that above
+          all, persuasive presenters deliver messages that matter to their
+          audiences. Let us help you resonate.'
+        />
         <div className={styles.AudioDev}>
           <div className={styles.Content}>
             <div className={styles.ContentHeading}>
