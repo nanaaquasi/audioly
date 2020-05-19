@@ -1,14 +1,13 @@
 import React from 'react';
-import { navItems } from '../../mock';
 
-import { NavLink, Redirect, useHistory, Link } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { authLogout } from '../../store/actions/auth.actions';
 
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
-  const isAuth = useSelector((state) => state.tokenID !== null);
+  const isAuth = useSelector((state) => state.tokenID);
 
   const dispatch = useDispatch();
   const history = useHistory();
@@ -17,6 +16,8 @@ const Navbar = () => {
     dispatch(authLogout());
     history.push('/');
   };
+
+  console.log(isAuth);
 
   return (
     <div className={styles.Navbar}>
