@@ -1,10 +1,23 @@
 import React from 'react';
 import { navItems } from '../../mock';
-import { Link } from 'react-router-dom';
+
+import { NavLink, Redirect, useHistory, Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { authLogout } from '../../store/actions/auth.actions';
 
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
+  const isAuth = useSelector((state) => state.tokenID !== null);
+
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  const logoutHandler = () => {
+    dispatch(authLogout());
+    history.push('/');
+  };
+
   return (
     <div className={styles.Navbar}>
       <nav>
@@ -14,13 +27,30 @@ const Navbar = () => {
           </Link>
         </div>
         <ul>
-          {navItems.map((item) => {
-            return (
-              <Link to={item.link} className={styles.NavItem}>
-                {item.title}
-              </Link>
-            );
-          })}
+          <Link to='/services' className={styles.NavItem}>
+            Services
+          </Link>
+          <Link to='/portfolio' className={styles.NavItem}>
+            Showcase
+          </Link>
+          <Link to='/Bookings' className={styles.NavItem}>
+            Bookings
+          </Link>
+          {!isAuth && (
+            <Link to='/auth' className={styles.NavItem}>
+              Log In
+            </Link>
+          )}
+          {isAuth && (
+            <Link to='/dashboard' className={styles.NavItem}>
+              Dashboard
+            </Link>
+          )}
+          {isAuth && (
+            <li onClick={logoutHandler} className={styles.NavItem}>
+              Log Out
+            </li>
+          )}
         </ul>
       </nav>
     </div>

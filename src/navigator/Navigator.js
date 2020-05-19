@@ -5,6 +5,7 @@ import PortfolioPage from '../pages/Our Works/PortfolioPage';
 import ServicesPage from '../pages/Services/ServicesPage';
 import AuthPage from '../pages/Auth/AuthPage';
 import BookingsPage from '../pages/Bookings/BookingsPage';
+import Dashboard from '../pages/Dashboard/Dashboard';
 
 const Navigator = () => {
   return (
@@ -15,6 +16,7 @@ const Navigator = () => {
         <Route path='/services' component={ServicesPage}></Route>
         <Route path='/auth' component={AuthPage}></Route>
         <Route path='/bookings' component={BookingsPage}></Route>
+        <Route path='/dashboard' component={Dashboard}></Route>
       </Switch>
     </div>
   );

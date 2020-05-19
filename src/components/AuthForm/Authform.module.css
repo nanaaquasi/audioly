@@ -1,0 +1,90 @@
+.FormContainer {
+  width: 40%;
+  margin: 8rem auto;
+  border: 2px solid rgb(245, 245, 245);
+  padding: 4rem;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Input {
+  outline: none;
+  border: none;
+  padding: 1.5rem 2rem;
+  background-color: rgb(245, 245, 245);
+  margin: 1rem 0;
+  border-radius: 1rem;
+  font-family: inherit;
+  font-size: 2rem;
+  /* color: rgb(255, 192, 192); */
+}
+
+.Heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.Actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.Newsletter {
+  margin-top: 2rem;
+  margin-left: .5rem;
+  padding: 1rem;
+}
+
+.NewsletterLabel {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+.SubmitButton {
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  font-weight: 700;
+  width: 40%;
+  background-color: #f7c945;
+  color: black;
+}
+
+.SwitchButton {
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid black;
+  margin-top: 10px;
+  font-weight: 700;
+  background: transparent;
+  color: black;
+}
+
+.primary:hover {
+  background-color: rgb(173, 172, 169);
+}
+
+.SecondaryBtn {
+  background: darkcyan;
+  transition: all .2s;
+}
+
+.Secondary:hover {
+  background: rgb(0, 71, 71);
+  color: white;
+}

@@ -11,10 +11,15 @@
 }
 
 .Navbar ul {
-  flex: 1;
+  width: 40%;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding-right: 2rem;
+}
+
+a:active {
+  font-weight: bold;
 }
 
 .NavItem {
@@ -23,16 +28,15 @@
   font-size: 2rem;
   color: inherit;
   backface-visibility: hidden;
-  padding-bottom: .7rem;
+  cursor: pointer;
 }
 
 .NavItem:hover {
-  border-bottom: 6px solid black;
-  backface-visibility: hidden;
+  font-weight: 900;
 }
 
 .Logo {
-  flex: 2;
+  flex: 1;
   padding-left: 4rem;
   align-self: center;
   cursor: pointer;
