@@ -10,7 +10,7 @@ import Dashboard from '../pages/Dashboard/Dashboard';
 import { useSelector } from 'react-redux';
 
 const Navigator = () => {
-  const isAuth = useSelector((state) => state.tokenID !== null);
+  const isAuth = useSelector((state) => state.tokenID);
   return (
     <div>
       <Route path='/' exact component={Home}></Route>
