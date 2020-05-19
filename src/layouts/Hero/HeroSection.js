@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 const HeroSection = () => {
   const history = useHistory();
 
-  const isAuth = useSelector((state) => state.tokenID !== null);
+  const isAuth = useSelector((state) => state.tokenID);
 
   const onClickHandler = () => {
     isAuth ? history.push('/dashboard') : history.push('/auth');
