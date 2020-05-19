@@ -1,7 +1,15 @@
 import React from 'react';
 import heroStyles from './Hero.module.css';
 
+import { useHistory } from 'react-router';
+
 const HeroSection = () => {
+  const history = useHistory();
+
+  const onClickHandler = () => {
+    history.push('/auth');
+  };
+
   return (
     <section className={heroStyles.Hero}>
       <div className={heroStyles.Container}>
@@ -17,7 +25,11 @@ const HeroSection = () => {
                 voice-overs, audio development and more!
               </p>
             </div>
-            <button className={heroStyles.HeroCtaButton}>Get Started</button>
+            <button
+              className={heroStyles.HeroCtaButton}
+              onClick={onClickHandler}>
+              Get Started
+            </button>
           </div>
         </div>
       </div>
