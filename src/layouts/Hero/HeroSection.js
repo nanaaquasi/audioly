@@ -3,11 +3,15 @@ import heroStyles from './Hero.module.css';
 
 import { useHistory } from 'react-router';
 
+import { useSelector } from 'react-redux';
+
 const HeroSection = () => {
   const history = useHistory();
 
+  const isAuth = useSelector((state) => state.tokenID !== null);
+
   const onClickHandler = () => {
-    history.push('/auth');
+    isAuth ? history.push('/dashboard') : history.push('/auth');
   };
 
   return (
