@@ -7,10 +7,12 @@ import BookingsModal from '../../components/Modal/BookingsModal';
 
 import { useToasts } from 'react-toast-notifications';
 import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router';
 
 const BookingsPage = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const { addToast } = useToasts();
+  const history = useHistory();
 
   const isAuth = useSelector((state) => state.tokenID);
 
@@ -21,6 +23,8 @@ const BookingsPage = () => {
       addToast('You need to login to continue', {
         appearance: 'error',
       });
+
+      history.push('/auth');
     }
   }
 
