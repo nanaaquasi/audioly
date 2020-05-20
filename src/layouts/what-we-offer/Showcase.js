@@ -3,7 +3,22 @@ import React from 'react';
 import styles from './showcase.module.css';
 import { SERVICES } from '../../mock';
 
+import BookingsModal from '../../components/Modal/BookingsModal';
+
 const Showcase = () => {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
     <section className={styles.Showcase}>
       <div className={styles.Container}>
@@ -21,12 +36,18 @@ const Showcase = () => {
                   key={service.id}
                   body={service.body}
                   buttonText={service.buttonText}
+                  onclick={openModal}
                 />
               );
             })}
           </div>
         </div>
       </div>
+      <BookingsModal
+        modalIsOpen={modalIsOpen}
+        afterOpenModal={afterOpenModal}
+        closeModal={closeModal}
+      />
     </section>
   );
 };
@@ -45,7 +66,7 @@ const ServiceTile = (props) => {
       <div className={styles.ServiceBody}>
         <p>{body}</p>
       </div>
-      <button>{buttonText}</button>
+      <button onClick={props.onclick}>{buttonText}</button>
     </div>
   );
 };

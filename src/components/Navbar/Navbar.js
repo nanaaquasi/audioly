@@ -17,8 +17,6 @@ const Navbar = () => {
     history.push('/');
   };
 
-  console.log(isAuth);
-
   return (
     <div className={styles.Navbar}>
       <nav>

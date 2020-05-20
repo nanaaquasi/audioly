@@ -3,11 +3,25 @@ import NavLarge from '../../components/Navbar_Large/NavLarge';
 import Footer from '../../layouts/Footer/Footer';
 
 import NewsLetter from '../../layouts/NewsLetter/Newsletter';
+import BookingsModal from '../../components/Modal/BookingsModal';
 
 import styles from './Services.module.css';
 import IntroText from '../../components/IntroText/IntroText';
 
 const ServicesPage = () => {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
     <div>
       <NavLarge title='Our Services.' />
@@ -32,7 +46,9 @@ const ServicesPage = () => {
                 amaze your audience and move them to spread your message.
               </p>
             </div>
-            <button className={styles.Button}>Book Service</button>
+            <button onClick={openModal} className={styles.Button}>
+              Book Service
+            </button>
           </div>
           <div className={styles.Image}>
             <img src='https://thenextscoop.com/wp-content/uploads/2019/06/audio-1280x720.jpg' />
@@ -55,7 +71,9 @@ const ServicesPage = () => {
                 clever communication plans.
               </p>
             </div>
-            <button className={styles.Button}>Book Service</button>
+            <button onClick={openModal} className={styles.Button}>
+              Book Service
+            </button>
           </div>
         </div>
 
@@ -74,13 +92,20 @@ const ServicesPage = () => {
                 set of templates for every presentation type.
               </p>
             </div>
-            <button className={styles.Button}>Book Service</button>
+            <button onClick={openModal} className={styles.Button}>
+              Book Service
+            </button>
           </div>
           <div className={styles.Image}>
             <img src='https://www.musictech.net/wp-content/uploads/2019/01/creative-sound-design-tips-header@1400x1050.jpg' />
           </div>
         </div>
       </div>
+      <BookingsModal
+        modalIsOpen={modalIsOpen}
+        afterOpenModal={afterOpenModal}
+        closeModal={closeModal}
+      />
       <NewsLetter />
       <Footer />
     </div>

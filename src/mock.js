@@ -161,4 +161,30 @@ const pricing = [
   },
 ];
 
-export { SERVICES, navItems, testimony, clientLogos, audioSamples, pricing };
+const checkboxes = [
+  {
+    name: 'Audio Branding',
+    key: 'audioBrand',
+    label: 'Audio Branding',
+  },
+  {
+    name: 'Audio Development',
+    key: 'audioDev',
+    label: 'Audio Development',
+  },
+  {
+    name: 'Media & Entertainment',
+    key: 'media',
+    label: 'Media & Entertainment',
+  },
+];
+
+export {
+  SERVICES,
+  navItems,
+  testimony,
+  clientLogos,
+  audioSamples,
+  pricing,
+  checkboxes,
+};

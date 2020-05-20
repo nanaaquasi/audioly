@@ -3,8 +3,35 @@ import React from 'react';
 import styles from './Bookings.module.css';
 import Card from '../../components/Card/Card';
 import { pricing } from '../../mock';
+import BookingsModal from '../../components/Modal/BookingsModal';
+
+import { useToasts } from 'react-toast-notifications';
+import { useSelector } from 'react-redux';
 
 const BookingsPage = () => {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const { addToast } = useToasts();
+
+  const isAuth = useSelector((state) => state.tokenID);
+
+  function openModal() {
+    if (isAuth) {
+      setIsOpen(true);
+    } else {
+      addToast('You need to login to continue', {
+        appearance: 'error',
+      });
+    }
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
     <>
       <section className={styles.Bookings}>
@@ -18,12 +45,14 @@ const BookingsPage = () => {
               {pricing.map((price) => {
                 return (
                   <Card
+                    id={price.id}
                     title={price.title}
                     description={price.desc}
                     itemList={price.services}
                     price={price.price}
                     rate={price.billRate}
                     key={price.id}
+                    onclick={openModal}
                   />
                 );
               })}
@@ -37,6 +66,11 @@ const BookingsPage = () => {
             </div>
           </div>
         </div>
+        <BookingsModal
+          modalIsOpen={modalIsOpen}
+          afterOpenModal={afterOpenModal}
+          closeModal={closeModal}
+        />
       </section>
     </>
   );

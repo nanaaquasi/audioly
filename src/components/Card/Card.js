@@ -28,7 +28,7 @@ const Card = (props) => {
         <ul>
           {props.itemList.map((list) => {
             return (
-              <li className={styles.CardDetail} key={list.id}>
+              <li className={styles.CardDetail} key={Math.random() + list}>
                 {list}
               </li>
             );
@@ -36,7 +36,7 @@ const Card = (props) => {
         </ul>
       </div>
       <div className={styles.CardFooter}>
-        <button>Get Started</button>
+        <button onClick={props.onclick}>Get Started</button>
       </div>
     </div>
   );

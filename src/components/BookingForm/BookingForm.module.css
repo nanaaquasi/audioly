@@ -1,0 +1,103 @@
+.Container {
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.Heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.Personal .sectionHeader {
+  background: rgb(255, 214, 199);
+  padding: 2rem;
+  width: 100%;
+  display: block;
+}
+
+.Service .sectionHeader {
+  background: rgb(207, 255, 199);
+  padding: 2rem;
+  width: 100%;
+  display: block;
+}
+
+.Date .sectionHeader {
+  background: rgb(255, 254, 199);
+  padding: 2rem;
+  width: 100%;
+  display: block;
+}
+
+.sectionForm {
+  padding: 2rem;
+}
+
+.sectionForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.sectionForm form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(167, 167, 167);
+  outline: none;
+  font-family: inherit;
+}
+
+.FormGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.sectionForm form label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.sectionHeader h2 {
+  font-size: 1.6rem;
+}
+
+.ServiceInput {
+  margin: 1rem 0;
+}
+
+.DateInput {
+  width: 40%;
+}
+
+.Date .sectionForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Button {
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 50px;
+  font-weight: 700;
+  width: 30%;
+  background-color: #f7c945;
+  color: black;
+}
