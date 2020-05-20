@@ -110,4 +110,55 @@ const audioSamples = [
   },
 ];
 
-export { SERVICES, navItems, testimony, clientLogos, audioSamples };
+const pricing = [
+  {
+    id: 'basic',
+    title: 'Basic',
+    desc: 'For personal use',
+    price: '$100',
+    billRate: 'Billed per video',
+    services: [
+      'Voice Over',
+      'Audio Branding',
+      '-',
+      '3 minutes',
+      '1-7 Days',
+      '-',
+      '1 Language',
+    ],
+  },
+  {
+    id: 'premium',
+    title: 'Premium',
+    desc: 'For small marketing team',
+    price: '$550',
+    billRate: 'Billed monthly',
+    services: [
+      'Voice Over',
+      'Audio Branding',
+      'Audio Development',
+      '20 minutes',
+      '1-3 Days',
+      'Project Management',
+      '2 Languages',
+    ],
+  },
+  {
+    id: 'enterprise',
+    title: 'Enterprise',
+    desc: 'For large businesses',
+    price: 'Custom',
+    billRate: 'Reach out for a quote',
+    services: [
+      'Voice Over',
+      'Audio Branding',
+      'Audio Development',
+      '30 minutes / Choice',
+      '1-3 Days',
+      'Project Management',
+      '5 Languages',
+    ],
+  },
+];
+
+export { SERVICES, navItems, testimony, clientLogos, audioSamples, pricing };

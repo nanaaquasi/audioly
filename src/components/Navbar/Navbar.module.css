@@ -1,7 +1,6 @@
 .Navbar {
   background: #ffd050;
-
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .Navbar nav {
@@ -11,7 +10,7 @@
 }
 
 .Navbar ul {
-  width: 40%;
+  width: 35%;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -25,7 +24,7 @@ a:active {
 .NavItem {
   text-decoration: none;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: inherit;
   backface-visibility: hidden;
   cursor: pointer;
