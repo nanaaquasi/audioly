@@ -3,12 +3,28 @@ import React from 'react';
 import styles from './showcase.module.css';
 import { SERVICES } from '../../mock';
 
+import { useToasts } from 'react-toast-notifications';
+import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router';
+
 import BookingsModal from '../../components/Modal/BookingsModal';
 
 const Showcase = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
+  const { addToast } = useToasts();
+  const history = useHistory();
+
+  const isAuth = useSelector((state) => state.tokenID);
   function openModal() {
-    setIsOpen(true);
+    if (isAuth) {
+      setIsOpen(true);
+    } else {
+      addToast('You need to login to continue', {
+        appearance: 'error',
+      });
+
+      history.push('/auth');
+    }
   }
 
   function afterOpenModal() {

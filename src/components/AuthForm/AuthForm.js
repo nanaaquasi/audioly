@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import * as authActions from '../../store/actions/auth.actions';
 import Spinner from '../Spinner/Spinner';
 import { withRouter } from 'react-router';
+import { useToasts } from 'react-toast-notifications';
 
 import styles from './Authform.module.css';
 
@@ -24,6 +25,7 @@ const AuthForm = (props) => {
   const error = useSelector((state) => state.error);
 
   const [isSignUp, setIsSignUp] = useState(true);
+  const { addToast } = useToasts();
 
   const toggleAuth = () => {
     setIsSignUp((prevState) => !prevState);
@@ -40,7 +42,10 @@ const AuthForm = (props) => {
           dispatch(authActions.auth(values.email, values.password, isSignUp));
           setSubmitting(false);
           resetForm();
-          props.history.push({ pathname: '/dashboard' });
+          props.history.goBack();
+          addToast('Successfully logged in', {
+            appearance: 'success',
+          });
         }}>
         {({ values, isSubmitting, errors }) => {
           return (

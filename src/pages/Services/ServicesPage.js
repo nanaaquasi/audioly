@@ -1,17 +1,33 @@
 import React from 'react';
+import { useToasts } from 'react-toast-notifications';
+import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router';
+
 import NavLarge from '../../components/Navbar_Large/NavLarge';
 import Footer from '../../layouts/Footer/Footer';
-
 import NewsLetter from '../../layouts/NewsLetter/Newsletter';
 import BookingsModal from '../../components/Modal/BookingsModal';
-
 import styles from './Services.module.css';
 import IntroText from '../../components/IntroText/IntroText';
 
 const ServicesPage = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  const { addToast } = useToasts();
+  const history = useHistory();
+
+  const isAuth = useSelector((state) => state.tokenID);
+
   function openModal() {
-    setIsOpen(true);
+    if (isAuth) {
+      setIsOpen(true);
+    } else {
+      addToast('You need to login to continue', {
+        appearance: 'error',
+      });
+
+      history.push('/auth');
+    }
   }
 
   function afterOpenModal() {
