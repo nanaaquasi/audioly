@@ -32,8 +32,8 @@ const Navbar = () => {
           <Link to='/portfolio' className={styles.NavItem}>
             Showcase
           </Link>
-          <Link to='/Bookings' className={styles.NavItem}>
-            Bookings
+          <Link to='/bookings' className={styles.NavItem}>
+            Pricing
           </Link>
           {!isAuth && (
             <Link to='/auth' className={styles.NavItem}>

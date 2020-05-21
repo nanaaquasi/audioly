@@ -11,19 +11,31 @@ import { useSelector } from 'react-redux';
 
 const Navigator = () => {
   const isAuth = useSelector((state) => state.tokenID);
-  return (
-    <div>
+
+  let routes = (
+    <Switch>
       <Route path='/' exact component={Home}></Route>
+      <Route path='/portfolio' component={PortfolioPage}></Route>
+      <Route path='/services' component={ServicesPage}></Route>
+      <Route path='/auth' component={AuthPage}></Route>
+      <Route path='/bookings' component={BookingsPage}></Route>
+      <Redirect to='/' />
+    </Switch>
+  );
+
+  if (isAuth) {
+    routes = (
       <Switch>
         <Route path='/portfolio' component={PortfolioPage}></Route>
         <Route path='/services' component={ServicesPage}></Route>
-        <Route path='/auth' component={AuthPage}></Route>
-        <Route path='/bookings' component={BookingsPage}></Route>
         <Route path='/dashboard' component={Dashboard}></Route>
-        {!isAuth && <Redirect to='/' />}
+        <Route path='/bookings' component={BookingsPage}></Route>
+        <Route path='/' exact component={Home}></Route>
       </Switch>
-    </div>
-  );
+    );
+  }
+
+  return <div>{routes}</div>;
 };
 
 export default Navigator;

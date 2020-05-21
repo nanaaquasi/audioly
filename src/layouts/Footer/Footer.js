@@ -16,7 +16,7 @@ const Footer = () => {
         <nav>
           <ul>
             {navItems.map((item) => (
-              <Link to={item.link} className={styles.NavItem}>
+              <Link to={item.link} className={styles.NavItem} key={item.title}>
                 {item.title}
               </Link>
             ))}

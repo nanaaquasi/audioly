@@ -9,7 +9,6 @@ const intialState = {
   isLoading: false,
   tokenID: null,
   userID: null,
-  userData: null,
   error: null,
 };
 
@@ -27,7 +26,6 @@ const reducer = (state = intialState, action) => {
         ...state,
         tokenID: payload.tokenId,
         userID: payload.userId,
-        userData: payload.userData,
         error: null,
         isLoading: false,
       };

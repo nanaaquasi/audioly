@@ -9,8 +9,8 @@ const ClientSection = () => {
       <h1>Our Partners</h1>
       <div className={styles.ClientSection}>
         {clientLogos.map((logo) => (
-          <div className={styles.ClientLogo}>
-            <img src={logo.assetName} alt={logo.id} key={logo.id} />
+          <div className={styles.ClientLogo} key={logo.id}>
+            <img src={logo.assetName} alt={logo.id} />
           </div>
         ))}
       </div>

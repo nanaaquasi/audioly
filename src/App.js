@@ -3,8 +3,16 @@ import Navigator from './navigator/Navigator';
 import Navbar from './components/Navbar/Navbar';
 
 import { ToastProvider } from 'react-toast-notifications';
+import { useDispatch } from 'react-redux';
+import { checkAuthState } from './store/actions/auth.actions';
 
 function App() {
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    dispatch(checkAuthState());
+  }, [dispatch]);
+
   return (
     <div className='App'>
       <Navbar />
