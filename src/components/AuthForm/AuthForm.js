@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import * as authActions from '../../store/actions/auth.actions';
 import Spinner from '../Spinner/Spinner';
-import { withRouter } from 'react-router';
+import { withRouter, useHistory, Redirect } from 'react-router';
 import { useToasts } from 'react-toast-notifications';
 
 import styles from './Authform.module.css';
@@ -19,10 +19,9 @@ const loginSchema = Yup.object().shape({
 
 const AuthForm = (props) => {
   const dispatch = useDispatch();
-
-  const userData = useSelector((state) => state.userData);
   const isLoading = useSelector((state) => state.isLoading);
   const error = useSelector((state) => state.error);
+  const authToken = useSelector((state) => state.tokenID);
 
   const [isSignUp, setIsSignUp] = useState(true);
   const { addToast } = useToasts();
@@ -31,10 +30,17 @@ const AuthForm = (props) => {
     setIsSignUp((prevState) => !prevState);
   };
 
-  console.log(props);
+  let authRedirect = null;
+
+  const history = useHistory();
+
+  if (authToken) {
+    authRedirect = <Redirect to='/dashboard' />;
+  }
 
   return (
     <div className={styles.FormContainer}>
+      {authRedirect}
       <Formik
         initialValues={{ email: '', password: '', newsletter: false }}
         validationSchema={loginSchema}
@@ -42,10 +48,6 @@ const AuthForm = (props) => {
           dispatch(authActions.auth(values.email, values.password, isSignUp));
           setSubmitting(false);
           resetForm();
-          props.history.goBack();
-          addToast('Successfully logged in', {
-            appearance: 'success',
-          });
         }}>
         {({ values, isSubmitting, errors }) => {
           return (
@@ -112,7 +114,6 @@ const AuthForm = (props) => {
           );
         }}
       </Formik>
-      <div>{userData}</div>
     </div>
   );
 };

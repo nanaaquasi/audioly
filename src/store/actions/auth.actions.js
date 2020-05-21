@@ -80,7 +80,6 @@ export const auth = (email, password, signUp) => {
         dispatch(checkExpireToken(response.data?.expiresIn));
       })
       .catch(({ response }) => {
-        console.log('[Error]', response.data.error.message);
         dispatch(authFailure(response.data.error.message));
       });
   };
