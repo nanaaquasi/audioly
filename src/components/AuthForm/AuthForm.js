@@ -35,7 +35,7 @@ const AuthForm = (props) => {
   const history = useHistory();
 
   if (authToken) {
-    authRedirect = <Redirect to='/dashboard' />;
+    history.goBack();
   }
 
   return (
