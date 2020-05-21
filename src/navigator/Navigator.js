@@ -30,6 +30,7 @@ const Navigator = () => {
         <Route path='/services' component={ServicesPage}></Route>
         <Route path='/dashboard' component={Dashboard}></Route>
         <Route path='/bookings' component={BookingsPage}></Route>
+        <Route path='/auth' component={AuthPage}></Route>
         <Route path='/' exact component={Home}></Route>
       </Switch>
     );
