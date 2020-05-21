@@ -11,7 +11,7 @@ function App() {
 
   React.useEffect(() => {
     dispatch(checkAuthState());
-  }, [dispatch]);
+  });
 
   return (
     <div className='App'>
