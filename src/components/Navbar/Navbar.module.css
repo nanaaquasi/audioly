@@ -10,10 +10,9 @@
 }
 
 .Navbar ul {
-  width: 35%;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-right: 2rem;
 }
 
@@ -55,5 +54,22 @@ a:active {
   position: fixed;
   top: 0;
   width: 100%;
+}
 
+.NavCenter {
+  flex: 1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.NavEnd {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
+
+.NavEnd a:not(:first-child) {
+  margin-left: 2rem;
 }

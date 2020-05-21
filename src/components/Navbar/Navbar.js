@@ -1,8 +1,8 @@
 import React from 'react';
-
 import { useHistory, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { authLogout } from '../../store/actions/auth.actions';
+import { Link as ScrollLink } from 'react-scroll';
 
 import styles from './Navbar.module.css';
 
@@ -25,7 +25,7 @@ const Navbar = () => {
             <h1>audioly.</h1>
           </Link>
         </div>
-        <ul>
+        <div className={styles.NavCenter}>
           <Link to='/services' className={styles.NavItem}>
             Services
           </Link>
@@ -35,6 +35,15 @@ const Navbar = () => {
           <Link to='/bookings' className={styles.NavItem}>
             Pricing
           </Link>
+          <ScrollLink
+            to='contact'
+            className={styles.NavItem}
+            smooth={true}
+            spy={true}>
+            Contact Us
+          </ScrollLink>
+        </div>
+        <div className={styles.NavEnd}>
           {!isAuth && (
             <Link to='/auth' className={styles.NavItem}>
               Log In
@@ -46,11 +55,11 @@ const Navbar = () => {
             </Link>
           )}
           {isAuth && (
-            <li onClick={logoutHandler} className={styles.NavItem}>
+            <a onClick={logoutHandler} className={styles.NavItem}>
               Log Out
-            </li>
+            </a>
           )}
-        </ul>
+        </div>
       </nav>
     </div>
   );

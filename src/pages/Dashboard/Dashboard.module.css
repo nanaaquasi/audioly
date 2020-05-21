@@ -1,0 +1,19 @@
+.DashboardLayout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.Navbar {
+  flex: 1;
+  background-color: aqua;
+}
+
+.Content {
+  flex: 9;
+  background-color: blueviolet;
+  /* height: 100vh; */
+}

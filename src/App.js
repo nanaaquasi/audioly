@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar />
+      {/* <Navbar /> */}
       <ToastProvider
         placement='top-right'
         autoDismissTimeout={6000}

@@ -1,0 +1,33 @@
+.MainNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+.Logo {
+  flex: 1;
+}
+
+.NavLinks {
+  justify-self: start;
+  flex: 6;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.NavItem:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.ProfileNav {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.ProfileNav div:not(:last-child) {
+  margin-right: 2rem;
+}

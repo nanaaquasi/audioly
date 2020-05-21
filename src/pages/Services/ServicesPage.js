@@ -9,6 +9,7 @@ import NewsLetter from '../../layouts/NewsLetter/Newsletter';
 import BookingsModal from '../../components/Modal/BookingsModal';
 import styles from './Services.module.css';
 import IntroText from '../../components/IntroText/IntroText';
+import Layout from '../../layouts/Layout';
 
 const ServicesPage = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -39,7 +40,7 @@ const ServicesPage = () => {
   }
 
   return (
-    <div>
+    <Layout>
       <NavLarge title='Our Services.' />
       <div className={styles.MainSection}>
         <IntroText
@@ -124,7 +125,7 @@ const ServicesPage = () => {
       />
       <NewsLetter />
       <Footer />
-    </div>
+    </Layout>
   );
 };
 

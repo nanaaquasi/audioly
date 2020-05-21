@@ -179,6 +179,12 @@ const checkboxes = [
   },
 ];
 
+const clientDashboardLinks = [
+  { id: 1, title: 'Bookings', link: 'client_bookings' },
+  { id: 2, title: 'Payments', link: 'payments' },
+  { id: 3, title: 'Projects', link: 'projects' },
+];
+
 export {
   SERVICES,
   navItems,
@@ -187,4 +193,5 @@ export {
   audioSamples,
   pricing,
   checkboxes,
+  clientDashboardLinks,
 };

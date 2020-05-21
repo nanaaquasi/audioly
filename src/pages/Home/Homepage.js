@@ -7,10 +7,11 @@ import Newsletter from '../../layouts/NewsLetter/Newsletter';
 import Footer from '../../layouts/Footer/Footer';
 import SampleSection from '../../layouts/Sample/SampleSection';
 import ClientSection from '../../layouts/Clients/ClientSection';
+import Layout from '../../layouts/Layout';
 
 const Homepage = () => {
   return (
-    <div>
+    <Layout>
       <HeroSection />
       <Showcase />
       <SampleSection />
@@ -18,7 +19,7 @@ const Homepage = () => {
       <ClientSection />
       <Newsletter />
       <Footer />
-    </div>
+    </Layout>
   );
 };
 

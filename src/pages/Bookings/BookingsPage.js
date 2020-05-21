@@ -4,6 +4,7 @@ import styles from './Bookings.module.css';
 import Card from '../../components/Card/Card';
 import { pricing } from '../../mock';
 import BookingsModal from '../../components/Modal/BookingsModal';
+import Layout from '../../layouts/Layout';
 
 import { useToasts } from 'react-toast-notifications';
 import { useSelector } from 'react-redux';
@@ -37,7 +38,7 @@ const BookingsPage = () => {
   }
 
   return (
-    <>
+    <Layout>
       <section className={styles.Bookings}>
         <div className={styles.Container}>
           <div className={styles.Heading}>
@@ -76,7 +77,7 @@ const BookingsPage = () => {
           closeModal={closeModal}
         />
       </section>
-    </>
+    </Layout>
   );
 };
 

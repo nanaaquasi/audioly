@@ -14,10 +14,11 @@ import hyperLoopCase from '../../assets/case_study_1.jpg';
 import pirchCase from '../../assets/pirch_Case_Study_3.jpg';
 import gainSightCase from '../../assets/case_study_4.jpeg';
 import hersheyCase from '../../assets/case_study_2.jpg';
+import Layout from '../../layouts/Layout';
 
 const PortfolioPage = () => {
   return (
-    <div>
+    <Layout>
       <NavLarge title='Our Works.' />
       <IntroText body='We’re fortunate to have worked with the biggest brands and leaders in the industry. From life-changing technologies to philanthropists improving the public good, world leaders who, well, lead the world—we have had the privilege of helping some of the most talented people spread their ideas. Our projects are often confidential so we can’t show you everything, but take a look at some of our favorite projects.' />
       <div className={styles.Divider}>
@@ -134,7 +135,7 @@ const PortfolioPage = () => {
       </div>
       <NewsLetter />
       <Footer />
-    </div>
+    </Layout>
   );
 };
 
