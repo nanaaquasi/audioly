@@ -1,0 +1,159 @@
+.Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Content {
+  flex: 6;
+  /* background-color: burlywood; */
+
+}
+
+.Welcome {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Welcome h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #f6a611;
+}
+
+.Promotions {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
+  padding: 2rem 3rem;
+  height: 24rem;
+  background-color: #fff8e3;
+  border-radius: 2rem;
+  margin-top: 4rem;
+}
+
+.PromotionsImage {
+  width: 28rem;
+  height: 28rem;
+  transform: translate(-2rem, -7rem);
+  justify-self: center;
+}
+
+.PromotionsImage img {
+  width: 100%;
+}
+
+.IntroText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.IntroText h1 {
+  line-height: 1.1;
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: rgb(68, 49, 7);
+  margin-left: 0;
+}
+
+.IntroText p {
+  margin: 1rem 0;
+}
+
+.IntroText button {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #f5c431;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #856300;
+  padding: .4rem 0;
+
+  justify-self: flex-end;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.IntroText button:hover {
+  background-color: #f5c431;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: .5rem 1rem;
+}
+
+.ActiveWorks {
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 9px 3px rgba(214, 214, 214, 0.34);
+  background-color: white;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.Heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.Heading button {
+  background-color: #f6a611;
+  color: black;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-weight: 800;
+  border-radius: .5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Heading:last-child {
+  margin-left: .5rem;
+  transform: scale(.7);
+}
+
+.Aside {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.DisplayDate {
+  background-color: #ffcc3f;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.DisplayDate h3 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.Calender {
+  padding-top: .2rem;
+}
+
+.CalenderStyles {
+  font-family: inherit;
+  background-color: #fff9eb;
+  border: none;
+  border-radius: 10px;
+
+}
+
+.CalenderStyles .react-calendar__tile {
+  font-family: inherit;
+}

@@ -1,0 +1,59 @@
+.Tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.Preview {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.Preview img {
+  width: 100%;
+  border-radius: .3rem;
+}
+
+.project {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  opacity: .3;
+}
+
+.audio {
+  flex: 4;
+}
+
+.date {
+  flex: 2;
+}
+
+.status {
+  flex: 2;
+}
+
+.status p {
+  font-weight: 700;
+}
+
+.DefaultColor {
+  color: #f08420;
+}
+
+.Green {
+  color: #57c269;
+}
+
+.Yellow {
+  color: #e1ff81;
+}
+
+.Black {
+  color: rgb(19, 19, 19);
+}

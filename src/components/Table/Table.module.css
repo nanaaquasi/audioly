@@ -1,0 +1,33 @@
+.Table {
+  display: flex;
+  flex-direction: column;
+}
+
+.TableHeading {
+  padding: 1rem 0;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: rgb(239, 243, 243);
+}
+
+/* .TableHeading div {
+  flex: 1;
+} */
+
+.project {
+  flex: 2;
+}
+
+.audio {
+  flex: 4;
+}
+
+.date {
+  flex: 2;
+}
+
+.status {
+  flex: 2;
+}

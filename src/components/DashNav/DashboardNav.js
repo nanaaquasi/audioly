@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link, useRouteMatch, NavLink } from 'react-router-dom';
 
 import styles from './DashNav.module.css';
 import { clientDashboardLinks } from '../../mock';
+import userImage from '../../assets/user.jpg';
+import notifIcon from '../../assets/notification.svg';
 
 const DashboardNav = (props) => {
   const match = useRouteMatch();
@@ -17,20 +19,32 @@ const DashboardNav = (props) => {
         <Link to='/' className={styles.NavItem}>
           Home
         </Link>
+        <NavLink
+          to={match.url}
+          className={styles.NavItem}
+          activeClassName={styles.ActiveNav}>
+          Dashboard
+        </NavLink>
         {clientDashboardLinks.map((item) => {
           return (
-            <Link
+            <NavLink
               to={`${match.url}/${item.link}`}
               className={styles.NavItem}
+              activeClassName={styles.ActiveNav}
               key={item.id}>
               {item.title}
-            </Link>
+            </NavLink>
           );
         })}
       </div>
       <div className={styles.ProfileNav}>
-        <div>Notifs</div>
-        <div>Profile Image</div>
+        <div className={styles.Notifs}>
+          <img src={notifIcon} alt='Notification Icon' />
+        </div>
+        <div className={styles.ProfileImage}>
+          <img src={userImage} alt='Profile Image' />
+        </div>
+        <h4>Nana Aquasi</h4>
       </div>
     </div>
   );

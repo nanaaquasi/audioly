@@ -46,12 +46,12 @@
   margin: 2rem 4rem;
 }
 
-audio {
+.AudioPlayer audio {
   box-shadow: 0px 4px 0px #c79e57 !important;
   border-radius: 4rem;
 }
 
-audio:focus {
+.AudioPlayer audio:focus {
   outline: none;
 }
 

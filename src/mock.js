@@ -185,6 +185,57 @@ const clientDashboardLinks = [
   { id: 3, title: 'Projects', link: 'projects' },
 ];
 
+const CLIENT_BOOKINGS = [
+  {
+    id: `${Math.random()}proj`,
+    status: 'Active',
+    title: 'Podcast Intro',
+    dateAdded: '20th May, 2020',
+    audio: audioSample_1,
+    image: audioImage_1,
+  },
+  {
+    id: `${Math.random()}projs`,
+    status: 'Active',
+    title: 'Voice Over',
+    dateAdded: '20th April, 2020',
+    audio: audioSample_2,
+    image: audioImage_2,
+  },
+  {
+    id: `${Math.random()}proj`,
+    status: 'Completed',
+    title: 'Audio Branding',
+    dateAdded: '20th March, 2020',
+    audio: audioSample_3,
+    image: audioImage_3,
+  },
+  {
+    id: `${Math.random()}proj`,
+    status: 'Waiting for Verification',
+    title: 'Audio Branding',
+    dateAdded: '20th March, 2020',
+    audio: audioSample_4,
+    image: audioImage_4,
+  },
+  {
+    id: `${Math.random()}proj`,
+    status: 'Waiting for Verification',
+    title: 'Voice Overs',
+    dateAdded: '12th May, 2020',
+    audio: audioSample_1,
+    image: audioImage_1,
+  },
+  {
+    id: `${Math.random()}proj`,
+    status: 'Completed',
+    title: 'Audio Mixing',
+    dateAdded: '6th April, 2020',
+    audio: audioSample_2,
+    image: audioImage_2,
+  },
+];
+
 export {
   SERVICES,
   navItems,
@@ -194,4 +245,5 @@ export {
   pricing,
   checkboxes,
   clientDashboardLinks,
+  CLIENT_BOOKINGS,
 };

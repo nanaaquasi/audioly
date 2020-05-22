@@ -8778,7 +8778,7 @@ react-audio-player@^0.13.0:
   dependencies:
     prop-types "^15.7.2"
 
-react-calendar@^3.0.0:
+react-calendar@^3.0.0, react-calendar@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/react-calendar/-/react-calendar-3.1.0.tgz#7a384a70f98e02177d176c45f6918fb6a15ce41f"
   integrity sha512-xoKdRe6FrnZ30LD9pyr20fhet1uwSbc6srLGm1ib7G4b7tAXniZrwzrJ4YV/Hbmmwf/zAFGyXtBzLAIV1KNvuA==

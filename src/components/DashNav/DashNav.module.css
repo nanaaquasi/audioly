@@ -1,11 +1,18 @@
 .MainNav {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem;
+
 }
 
 .Logo {
   flex: 1;
+  align-self: center;
+  margin-right: 3rem;
+}
+
+.Logo h1 {
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .NavLinks {
@@ -14,6 +21,19 @@
   display: flex;
   justify-content: start;
   align-items: center;
+}
+
+.NavItem {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: rgb(151, 151, 151);
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.ActiveNav {
+  color: #f6a611;
 }
 
 .NavItem:not(:first-child) {
@@ -30,4 +50,24 @@
 
 .ProfileNav div:not(:last-child) {
   margin-right: 2rem;
+}
+
+.ProfileImage {
+  width: 4rem;
+  height: 4rem;
+}
+
+.Notifs {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.Notifs img {
+  width: 100%;
+}
+
+.ProfileImage img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
