@@ -182,7 +182,6 @@ const checkboxes = [
 const clientDashboardLinks = [
   { id: 1, title: 'Bookings', link: 'client_bookings' },
   { id: 2, title: 'Payments', link: 'payments' },
-  { id: 3, title: 'Projects', link: 'projects' },
 ];
 
 const CLIENT_BOOKINGS = [
@@ -236,6 +235,107 @@ const CLIENT_BOOKINGS = [
   },
 ];
 
+const CLIENT_PAYMENTS = [
+  {
+    id: `${Math.random()}proj`,
+    status: 'Paid',
+    service: 'Podcast Intro',
+    dateAdded: '20th May, 2020',
+    amount: 200,
+    type: 'Mobile Money',
+    details: 'Marketing Services',
+  },
+  {
+    id: `${Math.random()}projs`,
+    status: 'Not Paid',
+    service: 'Voice Over',
+    dateAdded: '20th April, 2020',
+    amount: 200.49,
+    type: 'BitCoin',
+    details: 'For a Podcast',
+  },
+  {
+    id: `${Math.random()}proj`,
+    status: 'Paid',
+    service: 'Audio Branding',
+    dateAdded: '20th March, 2020',
+    amount: 30.65,
+    type: 'Mobile Money',
+    details: 'Product Advertisement',
+  },
+  {
+    id: `${Math.random()}proj`,
+    status: 'Refund',
+    service: 'Audio Branding',
+    dateAdded: '20th March, 2020',
+    amount: 250,
+    type: 'Cash Pay',
+    details: 'For Presentation',
+  },
+  {
+    id: `${Math.random()}proj`,
+    status: 'Failed',
+    service: 'Voice Overs',
+    dateAdded: '12th May, 2020',
+    amount: 120,
+    type: 'Credit Card',
+    details: 'Church service intro',
+  },
+  {
+    id: `${Math.random()}proj`,
+    status: 'Refund',
+    service: 'Audio Mixing',
+    dateAdded: '6th April, 2020',
+    amount: 100,
+    type: 'Mobile Money',
+    details: 'For a Podcast',
+  },
+];
+
+const paymentTableHeadings = [
+  'Service',
+  'Payment Details',
+  'Payment Type',
+  'Date',
+  'Amount',
+  'Status',
+];
+
+const projectTableHeadings = ['Project', 'Audio File', 'Date', 'Status'];
+
+const INVOICE_DATA = [
+  {
+    service: 'Podcast Intro',
+    type: 'Mobile Money',
+    date: '20th May, 2020',
+    amount: '$200.99',
+  },
+  {
+    service: 'Voice Over',
+    type: 'BitCoin',
+    date: '20th April, 2020',
+    amount: '$200.99',
+  },
+  {
+    service: 'Audio Branding',
+    type: 'Mobile Money',
+    date: '20th March, 2020',
+    amount: '$300.99',
+  },
+  {
+    service: 'Audio Branding',
+    type: 'Cash Pay',
+    date: '20th March, 2020',
+    amount: '$250.99',
+  },
+  {
+    service: 'Voice Overs',
+    type: 'Credit Card',
+    date: '12th May, 2020',
+    amount: '$120.99',
+  },
+];
+
 export {
   SERVICES,
   navItems,
@@ -246,4 +346,8 @@ export {
   checkboxes,
   clientDashboardLinks,
   CLIENT_BOOKINGS,
+  paymentTableHeadings,
+  projectTableHeadings,
+  CLIENT_PAYMENTS,
+  INVOICE_DATA,
 };

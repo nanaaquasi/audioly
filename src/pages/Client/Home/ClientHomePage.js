@@ -7,7 +7,7 @@ import heroImage from '../../../assets/herooo.png';
 import ListTile from '../../../components/ListTile/ListTile';
 import Table from '../../../components/Table/Table';
 import { ReactComponent as AddIcon } from '../../../assets/add.svg';
-import { CLIENT_BOOKINGS } from '../../../mock';
+import { CLIENT_BOOKINGS, projectTableHeadings } from '../../../mock';
 import 'react-calendar/dist/Calendar.css';
 
 import Calender from 'react-calendar';
@@ -50,7 +50,7 @@ const ClientHomePage = () => {
               <AddIcon />
             </button>
           </div>
-          <Table>
+          <Table headings={projectTableHeadings}>
             {activeProjects.map((project) => {
               return (
                 <ListTile

@@ -1,0 +1,40 @@
+.ListCard {
+  /* display: flex; */
+  border-radius: .5rem;
+  box-shadow: 1px 1px 9px 3px rgba(214, 214, 214, 0.34);
+  background-color: white;
+  padding: 2rem 2rem;
+  margin-top: 1rem;
+
+  display: grid;
+  grid-template-columns: 5rem 1fr 1.5fr repeat(4, 1fr);
+
+}
+
+.ListCard h4 {
+  color: rgb(160, 160, 160);
+}
+
+.status p {
+  font-weight: 800;
+}
+
+.Red {
+  color: #f02720;
+}
+
+.Green {
+  color: #339744;
+}
+
+.Yellow {
+  color: #9e8e00;
+}
+
+.Default {
+  color: #ebd300;
+}
+
+.Black {
+  color: rgb(19, 19, 19);
+}

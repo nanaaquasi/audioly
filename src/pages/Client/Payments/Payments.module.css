@@ -1,0 +1,72 @@
+.Payments {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.PaymentsTable {
+  border-radius: 2rem;
+  box-shadow: 1px 1px 9px 3px rgba(214, 214, 214, 0.34);
+  background-color: white;
+  padding: 4rem;
+}
+
+.Summary {
+  border-radius: .5rem;
+  box-shadow: 1px 1px 9px 3px rgba(214, 214, 214, 0.34);
+  background-color: hsl(39, 100%, 61%);
+  padding: 1rem 6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Summary h3 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-right: 4rem;
+  margin-top: 2rem;
+}
+
+.printButton {
+  background-color: #ffc14d;
+  color: black;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-weight: 800;
+  border-radius: .5rem;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.Header h1 {
+  font-weight: 900;
+
+}
+
+.PaymentsTable h3 {
+  margin-bottom: 2rem;
+}
+
+.checkbox {
+  flex: 1
+}
+
+.paymentDetails {
+  flex: 4;
+}
+
+.paymentType {
+  flex: 2
+}
+
+.date {
+  flex: 1
+}

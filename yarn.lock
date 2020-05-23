@@ -2914,7 +2914,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.6:
+classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -9026,6 +9026,13 @@ react-scroll@^1.7.16:
     lodash.throttle "^4.1.1"
     prop-types "^15.5.8"
 
+react-table-6@^6.11.0:
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/react-table-6/-/react-table-6-6.11.0.tgz#727de5d9f0357a35816a1bbc2e9c9868f8c5b2c4"
+  integrity sha512-zO24J+1Qg2AHxtSNMfHeGW1dxFcmLJQrAeLJyCAENdNdwJt+YolDDtJEBdZlukon7rZeAdB3d5gUH6eb9Dn5Ug==
+  dependencies:
+    classnames "^2.2.5"
+
 react-time-picker@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-time-picker/-/react-time-picker-4.0.1.tgz#ec3ee385377c8c6c8271a2dd1178452f6b11ad84"
@@ -9039,6 +9046,13 @@ react-time-picker@^4.0.1:
     react-clock "^2.3.0"
     react-fit "^1.0.3"
     update-input-width "^1.1.1"
+
+react-to-print@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-2.8.0.tgz#68fe8b5c94a7c85e7332bc5ac5f7f4faca336065"
+  integrity sha512-EgqQ+Iiyyl2g4JN1cbJvI4wC5RU83O7J4dxT2V8rzfjfM+zuml8JpiG7utxa6SI1Ld/jcfN6fAP//meNcbAS5g==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-toast-notifications@^2.4.0:
   version "2.4.0"

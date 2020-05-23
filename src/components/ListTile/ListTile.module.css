@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
+
+
 }
 
 .Preview {
@@ -47,11 +49,11 @@ hr {
 }
 
 .Green {
-  color: #57c269;
+  color: #339744;
 }
 
 .Yellow {
-  color: #e1ff81;
+  color: #9e8e00;
 }
 
 .Black {

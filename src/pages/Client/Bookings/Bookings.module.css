@@ -1,0 +1,4 @@
+.Bookings {
+  display: flex;
+  flex-direction: column;
+}

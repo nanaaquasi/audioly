@@ -12,22 +12,26 @@
   background-color: rgb(239, 243, 243);
 }
 
-/* .TableHeading div {
-  flex: 1;
-} */
-
-.project {
+.TableHeading div:nth-child(1) {
   flex: 2;
 }
 
-.audio {
+
+.TableHeading div:nth-child(2) {
   flex: 4;
 }
 
-.date {
+.TableHeading div:nth-child(3) {
   flex: 2;
 }
 
-.status {
+.TableHeading div:nth-child(4) {
   flex: 2;
+}
+
+
+.PaymentsTable .TableHeading {
+  display: grid;
+  grid-template-columns: 5rem 1fr 1.5fr repeat(4, 1fr);
+  /* background-color: blueviolet; */
 }
