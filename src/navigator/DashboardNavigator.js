@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, useRouteMatch, Switch } from 'react-router';
+import { Route, useRouteMatch, Switch, Redirect } from 'react-router';
 import Bookings from '../pages/Client/Bookings/Bookings';
 import ClientHomePage from '../pages/Client/Home/ClientHomePage';
 import Payments from '../pages/Client/Payments/Payments';

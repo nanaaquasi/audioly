@@ -6,6 +6,7 @@ import ServicesPage from '../pages/Services/ServicesPage';
 import AuthPage from '../pages/Auth/AuthPage';
 import BookingsPage from '../pages/Bookings/BookingsPage';
 import Dashboard from '../pages/Dashboard/Dashboard';
+import AdminDashboard from '../pages/Admin/Dashboard/AdminDashboard';
 
 import { useSelector } from 'react-redux';
 
@@ -15,10 +16,12 @@ const Navigator = () => {
   let routes = (
     <Switch>
       <Route path='/' exact component={Home}></Route>
+      <Route path='/admin' component={AdminDashboard}></Route>
       <Route path='/portfolio' component={PortfolioPage}></Route>
       <Route path='/services' component={ServicesPage}></Route>
       <Route path='/auth' component={AuthPage}></Route>
       <Route path='/bookings' component={BookingsPage}></Route>
+
       <Redirect to='/' />
     </Switch>
   );
@@ -31,6 +34,7 @@ const Navigator = () => {
         <Route path='/dashboard' component={Dashboard}></Route>
         <Route path='/bookings' component={BookingsPage}></Route>
         <Route path='/auth' component={AuthPage}></Route>
+        <Route path='/admin' component={AdminDashboard}></Route>
         <Route path='/' exact component={Home}></Route>
       </Switch>
     );

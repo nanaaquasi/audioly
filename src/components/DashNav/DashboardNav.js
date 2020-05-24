@@ -20,15 +20,15 @@ const DashboardNav = (props) => {
           Home
         </Link>
         <NavLink
-          to={match.url}
+          to={props.match.url}
           className={styles.NavItem}
           activeClassName={styles.ActiveNav}>
           Dashboard
         </NavLink>
-        {clientDashboardLinks.map((item) => {
+        {props.links.map((item) => {
           return (
             <NavLink
-              to={`${match.url}/${item.link}`}
+              to={`${props.match.url}/${item.link}`}
               className={styles.NavItem}
               activeClassName={styles.ActiveNav}
               key={item.id}>
@@ -42,9 +42,9 @@ const DashboardNav = (props) => {
           <img src={notifIcon} alt='Notification Icon' />
         </div>
         <div className={styles.ProfileImage}>
-          <img src={userImage} alt='Profile Image' />
+          <img src={props.image} alt='Profile Image' />
         </div>
-        <h4>Nana Aquasi</h4>
+        <h4>{props.name}</h4>
       </div>
     </div>
   );

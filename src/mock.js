@@ -15,6 +15,8 @@ import audioSample_2 from '../src/assets/sample_2.mp3';
 import audioSample_3 from '../src/assets/sample_3.mp3';
 import audioSample_4 from '../src/assets/sample_4.mp3';
 
+import clientImage from './assets/user.jpg';
+
 class Service {
   constructor({ id, imagePath, title, body, buttonText = 'Book Service' }) {
     this.id = id;
@@ -184,6 +186,21 @@ const clientDashboardLinks = [
   { id: 2, title: 'Payments', link: 'payments' },
 ];
 
+const adminDashboardLinks = [
+  { id: 1, title: 'Clients', link: 'clients' },
+  { id: 2, title: 'Works', link: 'projects' },
+];
+
+const clientInfo = {
+  username: 'Nana Aquasi',
+  profileImage: clientImage,
+};
+
+const adminInfo = {
+  username: 'Admin',
+  profileImage:
+    'https://pbs.twimg.com/profile_images/1242164855416725508/WfpWzO7y_400x400.jpg',
+};
 const CLIENT_BOOKINGS = [
   {
     id: `${Math.random()}proj`,
@@ -350,4 +367,7 @@ export {
   projectTableHeadings,
   CLIENT_PAYMENTS,
   INVOICE_DATA,
+  adminDashboardLinks,
+  adminInfo,
+  clientInfo,
 };
