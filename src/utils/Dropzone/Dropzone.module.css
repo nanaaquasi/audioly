@@ -1,0 +1,98 @@
+.Input {
+  width: 250px;
+  height: 250px;
+
+  background-color: #fff;
+  border: 2px dashed rgb(187, 186, 186);
+  border-radius: 50%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  outline: none;
+  margin: 2rem 0;
+}
+
+.Input:focus {
+  outline: none;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Icon {
+  opacity: 0.3;
+  height: 64px;
+  width: 64px;
+}
+
+.Layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Layout span {
+  text-align: center;
+  padding: 1rem;
+}
+
+.ActiveStyles {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  border: 2px dashed rgb(255, 202, 28);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  outline: none;
+}
+
+.RejectStyles {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  border: 2px dashed rgb(190, 63, 12);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  outline: none;
+}
+
+.AcceptStyles {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  border: 2px dashed rgb(255, 202, 28);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  outline: none;
+}
+
+.UploadButton {
+  background-color: #f6a611;
+  color: black;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-weight: 800;
+  border-radius: .5rem;
+  margin: 4rem 0;
+}

@@ -10,7 +10,6 @@ import { useRouteMatch } from 'react-router';
 const AdminDashboard = () => {
   const match = useRouteMatch();
 
-  console.log({ Admin: match });
   return (
     <>
       <section className={dashboardStyles.DashboardLayout}>

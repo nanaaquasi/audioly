@@ -28,9 +28,7 @@ const BookingsModal = (props) => {
         style={customStyles}
         overlayClassName={styles.Modal}
         contentLabel='Example Modal'>
-        <div className={styles.ModalBody}>
-          <BookingForm closeModal={props.closeModal} />
-        </div>
+        <div className={styles.ModalBody}>{props.children}</div>
       </Modal>
     </div>
   );

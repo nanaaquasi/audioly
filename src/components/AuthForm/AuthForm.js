@@ -98,7 +98,7 @@ const AuthForm = (props) => {
                       className={styles.SubmitButton}
                       type='submit'
                       disabled={isSubmitting}>
-                      Submit
+                      Confirm
                     </button>
                     <h3>OR</h3>
                     <button

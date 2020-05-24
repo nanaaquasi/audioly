@@ -1,0 +1,15 @@
+.Button {
+  background-color: #f6a611;
+  color: black;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-weight: 800;
+  border-radius: .5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

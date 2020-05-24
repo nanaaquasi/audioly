@@ -9,6 +9,7 @@ import Layout from '../../layouts/Layout';
 import { useToasts } from 'react-toast-notifications';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
+import BookingForm from '../../components/BookingForm/BookingForm';
 
 const BookingsPage = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -74,8 +75,9 @@ const BookingsPage = () => {
         <BookingsModal
           modalIsOpen={modalIsOpen}
           afterOpenModal={afterOpenModal}
-          closeModal={closeModal}
-        />
+          closeModal={closeModal}>
+          <BookingForm closeModal={closeModal} />
+        </BookingsModal>
       </section>
     </Layout>
   );

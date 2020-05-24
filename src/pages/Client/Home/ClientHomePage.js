@@ -6,11 +6,12 @@ import styles from './ClientHome.module.css';
 import heroImage from '../../../assets/herooo.png';
 import ListTile from '../../../components/ListTile/ListTile';
 import Table from '../../../components/Table/Table';
-import { ReactComponent as AddIcon } from '../../../assets/add.svg';
+import UploadOpener from '../../../components/UploadOpener/UploadOpener';
 import { CLIENT_BOOKINGS, projectTableHeadings } from '../../../mock';
 import 'react-calendar/dist/Calendar.css';
 
 import Calender from 'react-calendar';
+import FileUploader from '../../../utils/Dropzone/Dropzone';
 
 const ClientHomePage = () => {
   const activeProjects = CLIENT_BOOKINGS.filter(
@@ -45,10 +46,7 @@ const ClientHomePage = () => {
         <div className={styles.ActiveWorks}>
           <div className={styles.Heading}>
             <h4>Active Projects ({activeProjects.length})</h4>
-            <button>
-              Add New
-              <AddIcon />
-            </button>
+            <UploadOpener />
           </div>
           <Table headings={projectTableHeadings}>
             {activeProjects.map((project) => {

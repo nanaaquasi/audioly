@@ -6,6 +6,7 @@ import { ReactComponent as AddIcon } from '../../../assets/add.svg';
 
 import styles from '../../Client/Home/ClientHome.module.css';
 import bookStyles from './Bookings.module.css';
+import UploadOpener from '../../../components/UploadOpener/UploadOpener';
 const Bookings = () => {
   const activeProjects = CLIENT_BOOKINGS.filter(
     (booking) => booking.status === 'Active'
@@ -23,10 +24,7 @@ const Bookings = () => {
     <div className={bookStyles.Bookings}>
       <div className={styles.Heading}>
         <h2>Projects you have booked for so far.</h2>
-        <button>
-          Add New
-          <AddIcon />
-        </button>
+        <UploadOpener />
       </div>
 
       <Booking projects={completedProjects} type='Completed' />

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Dashboard.module.css';
 import DashboardNav from '../../components/DashNav/DashboardNav';
 import DashboardNavigator from '../../navigator/DashboardNavigator';
-import { clientDashboardLinks, adminInfo } from '../../mock';
+import { clientDashboardLinks, clientInfo } from '../../mock';
 import { useRouteMatch } from 'react-router';
 
 const Dashboard = () => {
@@ -18,8 +18,8 @@ const Dashboard = () => {
           <DashboardNav
             links={clientDashboardLinks}
             match={match}
-            image={adminInfo.profileImage}
-            name={adminInfo.username}
+            image={clientInfo.profileImage}
+            name={clientInfo.username}
           />
         </nav>
         <div className={styles.Content}>
