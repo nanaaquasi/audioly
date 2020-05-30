@@ -10,6 +10,7 @@ import BookingsModal from '../../components/Modal/BookingsModal';
 import styles from './Services.module.css';
 import IntroText from '../../components/IntroText/IntroText';
 import Layout from '../../layouts/Layout';
+import BookingForm from '../../components/BookingForm/BookingForm';
 
 const ServicesPage = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -122,7 +123,9 @@ const ServicesPage = () => {
         modalIsOpen={modalIsOpen}
         afterOpenModal={afterOpenModal}
         closeModal={closeModal}
-      />
+      >
+        <BookingForm closeModal={closeModal} />
+        </BookingsModal>
       <NewsLetter />
       <Footer />
     </Layout>

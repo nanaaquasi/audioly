@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
 
 import BookingsModal from '../../components/Modal/BookingsModal';
+import BookingForm from '../../components/BookingForm/BookingForm';
 
 const Showcase = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -63,7 +64,9 @@ const Showcase = () => {
         modalIsOpen={modalIsOpen}
         afterOpenModal={afterOpenModal}
         closeModal={closeModal}
-      />
+      >
+        <BookingForm closeModal={closeModal} />
+        </BookingsModal>
     </section>
   );
 };
